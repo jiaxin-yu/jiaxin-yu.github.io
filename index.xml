@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>汉堡包的个人博客</title>
     <link>https://jiaxin-yu.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on 汉堡包的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://jiaxin-yu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Dec 2021 16:59:25 +0800</lastBuildDate><atom:link href="https://jiaxin-yu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First</title>
+      <link>https://jiaxin-yu.github.io/post/centos%E5%AE%89%E8%A3%85docker%E5%92%8Cdocker-compose/</link>
+      <pubDate>Mon, 27 Dec 2021 16:59:25 +0800</pubDate>
+      
+      <guid>https://jiaxin-yu.github.io/post/centos%E5%AE%89%E8%A3%85docker%E5%92%8Cdocker-compose/</guid>
+      <description>查看centos内核版本 [root@VM-24-14-centos ~]# cat /etc/redhat-release CentOS Linux release 7.9.2009 (Core) CentOS 7 (使用yum进行安装) # step 1: 安装必要的一些系统工具 sudo yum install -y yum-utils device-mapper-persistent-data lvm2 # Step 2: 添加软件源信息 sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo # Step 3: 更新并安装 Docker-CE sudo yum makecache fast sudo yum -y install docker-ce # Step 4: 开启Docker服务 sudo service docker start 注意：其他注意事项在下面的注释中 # 官方软件源默认启用了最新的软件，您可以通过编辑软件源的方式获取各个版本的软件包。例如官方并没有将测试版本的软件源置为可用，你可以通过以下方式开启。同理可以开启各种测试版本等。 # vim /etc/yum.repos.d/docker-ce.repo # 将 [docker-ce-test] 下方的 enabled=0 修改为 enabled=1 # # 安装指定版本的Docker-CE: # Step 1: 查找Docker-CE的版本: # yum list docker-ce.</description>
+    </item>
+    
   </channel>
 </rss>
